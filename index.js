@@ -3,10 +3,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const helmet = require("helmet");
-const HttpError = require("./utils/http-error");
-const connectDB = require("./db/index.js");
+const HttpError = require("./src/utils/http-error.js");
+const connectDB = require("./src/db/index.js");
 
-const bookRoutes = require("./routes/book.route");
+const bookRoutes = require("./src/routes/book.route.js");
 
 const app = express();
 
